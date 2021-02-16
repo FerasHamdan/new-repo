@@ -1,0 +1,23 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{{title}}</title>
+</head>
+<body>
+{% for i in all %}
+{{i.title}}
+<br>
+{{i.content|safe}}
+<br>
+<hr>
+{% endfor %}
+<img class= "rounded-circle" src="{% static 'today/img/1.jpg' %}" width="100px">
+<img class= "rounded-circle" src="{% static 'today/img/1.jpg' %}" width="100px">
+<img class= "rounded-circle" src="{% static 'today/img/1.jpg' %}" width="100px">
+</body>
+</html>
